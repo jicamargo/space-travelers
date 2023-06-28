@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  column-gap: 30px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.profileMission,
+.profileRocket {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileMission h2,
+.profileRocket h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profileMission span,
+.profileRocket span {
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 20px;
+  padding: 20px;
+}
