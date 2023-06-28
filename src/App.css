@@ -30,31 +30,5 @@ nav .logo {
   display: flex;
   align-items: center;
   list-style: none;
-<<<<<<< HEAD
   gap: 1rem;
-=======
-  gap: 5rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-}
-
-.navbar .active {
-  color: rgb(0, 157, 255);
-  text-decoration: underline;
-}
-
-.navbar li {
-  transition: 0.2s ease-in-out;
-}
-
-.navbar li:hover {
-  transform: scale(1.05);
-}
-
-.navbar li:active {
-  transform: scale(0.95);
->>>>>>> a079547fb94ce1a44078b07ba953ad19b1ef1b32
 }
