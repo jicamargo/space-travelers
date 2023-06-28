@@ -2,17 +2,59 @@
   box-sizing: border-box;
 }
 
-.header {
+nav {
   display: flex;
+  justify-content: space-between;
+  margin: 1rem 10rem 1rem 1rem;
   align-items: center;
   height: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-bottom: solid 1px #e8e8e8;
+}
+
+nav .div-logo {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 1rem;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   list-style: none;
+<<<<<<< HEAD
   gap: 1rem;
+=======
+  gap: 5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .active {
+  color: rgb(0, 157, 255);
+  text-decoration: underline;
+}
+
+.navbar li {
+  transition: 0.2s ease-in-out;
+}
+
+.navbar li:hover {
+  transform: scale(1.05);
+}
+
+.navbar li:active {
+  transform: scale(0.95);
+>>>>>>> a079547fb94ce1a44078b07ba953ad19b1ef1b32
 }
