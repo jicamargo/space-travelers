@@ -1,0 +1,39 @@
+.RocketCard {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.RocketCard__header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.RocketCard__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.RocketCard__body {
+  display: flex;
+}
+
+.RocketCard__image {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.RocketCard__details {
+  flex-grow: 1;
+}
+
+.RocketCard__details p {
+  margin-bottom: 8px;
+}
+
+.RocketCard__details strong {
+  font-weight: bold;
+}
