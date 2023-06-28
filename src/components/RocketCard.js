@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelReservation } from '../redux/rockets/rocketsSlice';
 
-import './RocketCard.css';
+import '../css/RocketCard.css';
 
 function RocketCard({ rocket }) {
   const dispatch = useDispatch();
