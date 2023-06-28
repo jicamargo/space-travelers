@@ -5,7 +5,10 @@ import { ROCKETS_URL } from '../apiconfig';
 export const fetchRockets = createAsyncThunk('Rockets/fetchRockets', async () => {
   try {
     const response = await axios.get(`${ROCKETS_URL}`);
-    const rockets = response.data;
+    const rockets = response.data.map((rocket) => ({
+      ...rocket,
+      reserved: false, // Add the reserved property to each rocket
+    }));
     return rockets;
   } catch (error) {
     throw new Error('Failed to fetch Rockets');
@@ -20,7 +23,22 @@ const initialState = {
 const RocketsSlice = createSlice({
   name: 'Rockets',
   initialState,
-  reducers: {},
+  reducers: {
+    reserveRocket: (state, action) => {
+      const rocketId = action.payload;
+      const rocket = state.rockets.find((rocket) => rocket.id === rocketId);
+      if (rocket) {
+        rocket.reserved = true; // Update the reserved property to true
+      }
+    },
+    cancelReservation: (state, action) => {
+      const rocketId = action.payload;
+      const rocket = state.rockets.find((rocket) => rocket.id === rocketId);
+      if (rocket) {
+        rocket.reserved = false; // Update the reserved property to false
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchRockets.pending, (state) => {
@@ -36,4 +54,5 @@ const RocketsSlice = createSlice({
   },
 });
 
+export const { reserveRocket, cancelReservation } = RocketsSlice.actions;
 export default RocketsSlice.reducer;
