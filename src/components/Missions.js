@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Mission.css';
+import '../css/Mission.css';
 import { useSelector } from 'react-redux';
 import MissionItem from './MissionItem';
 

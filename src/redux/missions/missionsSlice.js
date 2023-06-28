@@ -7,7 +7,7 @@ const initialState = {
   loading: false,
 };
 
-export const returnAllMissions = createAsyncThunk('Get All Books', async () => {
+export const returnAllMissions = createAsyncThunk('Get All Missions', async () => {
   const response = await axios.get(MISSIONS_URL);
   return response.data;
 });

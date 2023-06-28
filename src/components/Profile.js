@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Profile.css';
+import '../css/Profile.css';
 import MissionProfile from './MissionProfile';
 
 const Profile = () => (
