@@ -3,9 +3,16 @@
   --color-primary: #3498db;
   --color-primary-dark: #2980b9;
   --color-accent: #ff6b6b;
+  --color-accent-background: rgb(0, 207, 162);
   --color-shadow: rgb(0 0 0 / 30%);
   --font-size-heading: 24px;
   --font-weight-heading: bold;
+}
+
+.rockets {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem 2rem;
 }
 
 .RocketCard {
@@ -30,8 +37,11 @@
 }
 
 .RocketCard__reserved-label {
-  color: var(--color-accent);
+  color: var(--color-background);
+  background-color: var(--color-accent-background);
   font-weight: var(--font-weight-heading);
+  padding: 4px 8px;
+  border-radius: 8px;
 }
 
 .RocketCard__body {
@@ -77,7 +87,11 @@
   background-color: var(--color-primary-dark);
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
+  .rockets {
+    padding: 0;
+  }
+
   .RocketCard {
     flex-direction: column;
   }
