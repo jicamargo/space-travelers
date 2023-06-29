@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchRockets } from '../redux/rockets/rocketsSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import RocketCard from './RocketCard';
 
 const Rockets = () => {
-  const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.rockets.loading); // Add a loading state
   const Rockets = useSelector((state) => state.rockets.rockets);
-
-  useEffect(() => {
-    dispatch(fetchRockets());
-  }, [dispatch]);
 
   if (isLoading) { // Display loading message if data is still being fetched
     return (

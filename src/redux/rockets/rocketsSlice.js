@@ -1,7 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { ROCKETS_URL } from '../apiconfig';
-// Async action creator
+
+const initialState = {
+  rockets: [],
+  loading: false,
+};
+
 export const fetchRockets = createAsyncThunk('Rockets/fetchRockets', async () => {
   try {
     const response = await axios.get(`${ROCKETS_URL}`);
@@ -14,11 +19,6 @@ export const fetchRockets = createAsyncThunk('Rockets/fetchRockets', async () =>
     throw new Error('Failed to fetch Rockets');
   }
 });
-
-const initialState = {
-  loading: false,
-  rockets: [],
-};
 
 const RocketsSlice = createSlice({
   name: 'Rockets',
