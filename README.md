@@ -115,9 +115,9 @@ npm test
 
 👤 **Jorge ...**
 
-- GitHub: [@Abiy Github](https://github.com/jicamargo)
-- Twitter: [@Abit Twitter](https://twitter.com/Abiy62463489)
-- LinkedIn: [@Abit LinkedIn](https://www.linkedin.com/in/ab-ab-194587183/)
+- GitHub: [@jicamargo](https://github.com/jicamargo)
+- Twitter: [@ji_camargo](https://twitter.com/ji_camargo)
+- LinkedIn: [@jorgecamargpg](https://www.linkedin.com/in/jorgecamargog/)
 
 👤 **Abiy Hussen Aman**
 
