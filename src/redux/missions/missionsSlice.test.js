@@ -1,4 +1,4 @@
-import MissionsReducer, { returnAllMissions, GetMissions } from './missionsSlice';
+import MissionsReducer, { returnAllMissions } from './missionsSlice';
 
 describe('MissionsSlice', () => {
   test('should handle returnAllMissions pending', () => {
@@ -10,7 +10,7 @@ describe('MissionsSlice', () => {
     const missionsData = [{ mission_id: '1', name: 'Mission 1' }];
     const nextState = MissionsReducer(
       undefined,
-      returnAllMissions.fulfilled(missionsData)
+      returnAllMissions.fulfilled(missionsData),
     );
     expect(nextState.loading).toBe(false);
     expect(nextState.missions).toEqual(missionsData);

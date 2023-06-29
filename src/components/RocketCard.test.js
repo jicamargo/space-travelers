@@ -10,17 +10,17 @@ test('should render rocket card correctly', () => {
       rockets: () => ({ loading: false, rockets: [] }),
     },
   });
-  
+
   const rocketData = {
     id: '1',
     name: 'Falcon 9',
-    flickr_images: ['image1.jpg', 'image2.jpg'], 
+    flickr_images: ['image1.jpg', 'image2.jpg'],
     country: 'USA',
     company: 'SpaceX',
     description: 'Rocket description',
-    first_flight: '2006-03-24', 
-    success_rate_pct: 95, 
-    reserved: false, 
+    first_flight: '2006-03-24',
+    success_rate_pct: 95,
+    reserved: false,
   };
 
   const { getByText } = render(

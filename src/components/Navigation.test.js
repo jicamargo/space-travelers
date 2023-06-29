@@ -7,7 +7,7 @@ test('should render navigation links correctly', () => {
   const { getByText } = render(
     <BrowserRouter>
       <Navigation />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
 
   expect(getByText('Space Travelers')).toBeInTheDocument();

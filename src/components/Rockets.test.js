@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Provider, useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import Rockets from './Rockets';
 
@@ -15,7 +15,7 @@ describe('Rockets component', () => {
     const { getByText } = render(
       <Provider store={store}>
         <Rockets />
-      </Provider>
+      </Provider>,
     );
 
     expect(getByText('Loading...')).toBeInTheDocument();
@@ -31,7 +31,7 @@ describe('Rockets component', () => {
     const { getByText } = render(
       <Provider store={store}>
         <Rockets />
-      </Provider>
+      </Provider>,
     );
 
     expect(getByText('No Rockets available')).toBeInTheDocument();
@@ -42,40 +42,40 @@ describe('Rockets component', () => {
       {
         id: '1',
         name: 'Falcon 9',
-        flickr_images: ['image1.jpg', 'image2.jpg'], 
+        flickr_images: ['image1.jpg', 'image2.jpg'],
         country: 'USA',
         company: 'SpaceX',
         description: 'Rocket description',
-        first_flight: '2006-03-24', 
-        success_rate_pct: 95, 
-        reserved: false, 
+        first_flight: '2006-03-24',
+        success_rate_pct: 95,
+        reserved: false,
       },
       {
         id: '2',
         name: 'Atlas V',
-        flickr_images: ['image3.jpg', 'image4.jpg'], 
+        flickr_images: ['image3.jpg', 'image4.jpg'],
         country: 'USA',
         company: 'ULA',
         description: 'Rocket description',
-        first_flight: '2002-08-21', 
-        success_rate_pct: 98, 
-        reserved: true, 
+        first_flight: '2002-08-21',
+        success_rate_pct: 98,
+        reserved: true,
       },
     ];
 
     const store = configureStore({
       reducer: {
-        rockets: () => ({ loading: false, rockets: rockets }),
+        rockets: () => ({ loading: false, rockets }),
       },
     });
 
     const { queryAllByTestId } = render(
       <Provider store={store}>
         <Rockets />
-      </Provider>
+      </Provider>,
     );
- 
+
     const rocketCards = queryAllByTestId('rocket-card');
-    expect(rocketCards.length).toBe(rockets.length);   
+    expect(rocketCards.length).toBe(rockets.length);
   });
 });

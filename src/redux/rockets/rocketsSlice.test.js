@@ -14,7 +14,7 @@ describe('RocketsSlice', () => {
     const rocketsData = [{ id: '1', name: 'Falcon 9' }];
     const nextState = RocketsReducer(
       undefined,
-      fetchRockets.fulfilled(rocketsData)
+      fetchRockets.fulfilled(rocketsData),
     );
     expect(nextState.loading).toBe(false);
     expect(nextState.rockets).toEqual(rocketsData);
@@ -32,7 +32,7 @@ describe('RocketsSlice', () => {
     };
     const nextState = RocketsReducer(
       initialState,
-      reserveRocket('1')
+      reserveRocket('1'),
     );
     expect(nextState.rockets[0].reserved).toBe(true);
   });
@@ -44,7 +44,7 @@ describe('RocketsSlice', () => {
     };
     const nextState = RocketsReducer(
       initialState,
-      cancelReservation('1')
+      cancelReservation('1'),
     );
     expect(nextState.rockets[0].reserved).toBe(false);
   });
