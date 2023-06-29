@@ -30,4 +30,5 @@ test('should render rocket card correctly', () => {
   );
 
   expect(getByText('Falcon 9')).toBeInTheDocument();
+  expect(getByText('Rocket description')).toBeInTheDocument();
 });
