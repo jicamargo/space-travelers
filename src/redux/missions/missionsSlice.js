@@ -1,15 +1,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { MISSIONS_URL } from '../apiconfig';
+import { fetchMissionsData } from '../api';
 
 const initialState = {
   missions: [],
   loading: false,
 };
 
-export const returnAllMissions = createAsyncThunk('Get All Missions', async () => {
-  const response = await axios.get(MISSIONS_URL);
-  return response.data;
+export const returnAllMissions = createAsyncThunk('Missions/returnAllMissions', async () => {
+  const missions = await fetchMissionsData();
+  return missions;
 });
 
 export const counterSlice = createSlice({
