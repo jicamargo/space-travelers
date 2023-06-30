@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { render, waitFor } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import Missions from '../components/missions';
+import Missions from '../components/Missions';
 import store from '../redux/store';
 
 describe('Missions component', () => {
