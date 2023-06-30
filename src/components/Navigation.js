@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <nav>
       <div className="div-logo">
-        <img className="logo" src={saturnIcon} alt="Planet Icon" />
+        <img className="logo-img" src={saturnIcon} alt="Planet Icon" />
         <span className="logo">Space Travelers</span>
       </div>
       <ul className="navbar">
