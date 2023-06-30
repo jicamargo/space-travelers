@@ -17,7 +17,7 @@ const Rockets = () => {
     );
   }
 
-  if (Rockets.length === 0) {
+  if (!isLoading && Rockets.length === 0) {
     return (
       <section className="rockets">
         <header>

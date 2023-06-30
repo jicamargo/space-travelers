@@ -19,7 +19,7 @@ function RocketCard({ rocket }) {
   };
 
   return (
-    <article className="RocketCard">
+    <article className="RocketCard" data-testid="rocket-card">
       <div className="RocketCard__header">
         <h2 className="RocketCard__name">{rocket.name}</h2>
         {isReserved && <span className="RocketCard__reserved-label">Reserved</span>}
