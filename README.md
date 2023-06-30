@@ -2,7 +2,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./html_css.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Space-Travelers</b></h3>
