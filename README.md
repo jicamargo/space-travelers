@@ -35,7 +35,7 @@
 
 # 📖 [Space-Travelers PRJECT] <a name="about-project"></a>
 
-**[Abiy Capstone One]** This is a Space-Travelers project created during my Microverse course. 
+- A Space-X-React-Group app built with React, Redux, CSS, and HTML. Users can view information about the latest Space-X launches, rockets, and missions. The app also features a search function, allowing users to search for information about specific launches, rockets, or missions.👌
 
 - [Project Description Link](#)
 
@@ -56,10 +56,12 @@
 
 <!-- Features -->
 
-
 ### Key Features <a name="key-features"></a>
 
-- **Space-Travelers is configured**
+- Add the functionality of the two reducers of the rockets and missions 🪄
+- Fetch the data from the API for the rockets and missions.👌
+- Use the react-router dom for navigating from one page to another.💯
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
