@@ -34,7 +34,7 @@
 
 # 📖 [Space-Travelers PRJECT] <a name="about-project"></a>
 
-- A Space-X-React-Group app built with React, Redux, CSS, and HTML. Users can view information about the latest Space-X launches, rockets, and missions. The app also features a search function, allowing users to search for information about specific launches, rockets, or missions.👌
+- A Space-X-React-Group app built with React, Redux, CSS, and HTML. Users can view information about the latest Space-X launches, rockets, and missions. The app also features a search function, allowing users to search for information about specific launches, rockets, or missions. 👌
 
 - [Project Description Link](#)
 
@@ -57,7 +57,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Add the functionality of the two reducers of the rockets and missions 🪄
+- Add the functionality of the two reducers of the rockets and missions.🪄
 - Fetch the data from the API for the rockets and missions.👌
 - Use the react-router dom for navigating from one page to another.💯
 
