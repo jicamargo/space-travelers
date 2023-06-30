@@ -15,9 +15,19 @@ export const fetchRocketsData = async () => {
 };
 
 export const fetchMissionsData = async () => {
+  // try {
+  //   const response = await axios.get(MISSIONS_URL);
+  //   return response.data;
+  // } catch (error) {
+  //   throw new Error('Failed to fetch missions');
+  // }
   try {
-    const response = await axios.get(MISSIONS_URL);
-    return response.data;
+    const response = await axios.get(`${MISSIONS_URL}`);
+    const missions = response.data.map((mission) => ({
+      ...mission,
+      reserved: false, // Add the reserved property to each rocket
+    }));
+    return missions;
   } catch (error) {
     throw new Error('Failed to fetch missions');
   }

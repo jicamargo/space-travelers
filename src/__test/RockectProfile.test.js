@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { useSelector } from 'react-redux';
-import RocketProfile from './RocketProfile';
+import RocketProfile from '../components/RocketProfile';
 
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),

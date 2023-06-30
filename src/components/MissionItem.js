@@ -6,7 +6,7 @@ import { GetMissions } from '../redux/missions/missionsSlice';
 const MissionItem = ({ mission, missions }) => {
   const dispatch = useDispatch();
   return (
-    <div className="mission_Item">
+    <div className="mission_Item" data-testid="missionItem_testid">
       <h4>{mission.mission_name}</h4>
       <p>{mission.description}</p>
       <div className="buttonMember">
