@@ -2,7 +2,7 @@ import RocketsReducer, {
   fetchRockets,
   reserveRocket,
   cancelReservation,
-} from './rocketsSlice';
+} from '../redux/rockets/rocketsSlice';
 
 describe('RocketsSlice', () => {
   test('should handle fetchRockets pending', () => {

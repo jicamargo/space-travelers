@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import Rockets from './Rockets';
+import Rockets from '../components/Rockets';
 
 describe('Rockets component', () => {
   test('should render loading message when isLoading is true', () => {

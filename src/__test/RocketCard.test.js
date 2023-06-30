@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import RocketCard from './RocketCard';
+import RocketCard from '../components/RocketCard';
 
 test('should render rocket card correctly', () => {
   const store = configureStore({

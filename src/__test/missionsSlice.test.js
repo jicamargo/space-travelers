@@ -1,4 +1,4 @@
-import MissionsReducer, { returnAllMissions } from './missionsSlice';
+import MissionsReducer, { returnAllMissions } from '../redux/missions/missionsSlice';
 
 describe('MissionsSlice', () => {
   test('should handle returnAllMissions pending', () => {
