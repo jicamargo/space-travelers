@@ -13,6 +13,7 @@ const Missions = () => {
           <h4>Mission</h4>
           <h4>Description</h4>
           <h4>status</h4>
+          <h4>join</h4>
           <span />
         </div>
         {
