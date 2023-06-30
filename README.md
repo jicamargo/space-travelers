@@ -121,7 +121,7 @@ npm test
 
 👤 **Abiy Hussen Aman**
 
-- GitHub: [@Abiy Github](https://github.com/jicamargo)
+- GitHub: [@Abiy Github](https://github.com/abiy006)
 - Twitter: [@Abit Twitter](https://twitter.com/Abiy62463489)
 - LinkedIn: [@Abit LinkedIn](https://www.linkedin.com/in/ab-ab-194587183/)
 
